@@ -1,7 +1,24 @@
-import React from 'react'
+import { Button } from "../../components/atoms/Button"
+import { InputText } from "../../components/molecules/inputText"
+import { Link } from "../../components/molecules/Link"
+import { SidebarHero } from "../../components/organism/SidebarHero"
+import { TemplateContainer, TemplateContent, TemplateMainHeroSection} from "../../components/templates"
 
 export const Register = () => {
   return (
-    <div>Register</div>
+    <TemplateContainer>
+        <TemplateContent>
+            <SidebarHero/>
+            <TemplateMainHeroSection>
+              <h1 className="font-bold text-3xl">Crie sua conta</h1>
+              <form className="flex flex-col w-full gap-4">
+                <InputText label="Email: " type='email'/>
+                <InputText label="Senha: " type='password'/>
+                <Button>Criar Conta</Button>
+              </form>
+              <Link href="/">Ja passuo uma conta</Link>
+            </TemplateMainHeroSection>
+        </TemplateContent>
+    </TemplateContainer>
   )
 }
