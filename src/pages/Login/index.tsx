@@ -10,11 +10,11 @@ export const Login = () => {
         <TemplateContent>
             <SidebarHero/>
             <TemplateMainHeroSection>
-              <h1 className="font-bold text-3xl">Controle seus gastos</h1>
+              <h1 className="font-bold text-3xl">Acesse sua conta</h1>
               <form className="flex flex-col w-full gap-4">
                 <InputText label="Email: " type='email'/>
                 <InputText label="Senha: " type='password'/>
-                <Button>Log In</Button>
+                <Button>Entrar</Button>
               </form>
               <Link href="/register">Criar Conta</Link>
             </TemplateMainHeroSection>
