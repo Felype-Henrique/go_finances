@@ -1,3 +1,4 @@
+import Router from "next/router"
 import { Button } from "../../components/atoms/Button"
 import { TemplateContainer } from "../../components/templates"
 import { Card } from "./components/Card"
@@ -10,12 +11,15 @@ export const Dashboard = () => {
         { id: "3", title: "Spotify", category: "streaming", cost: 9.99 },
     ]
 
+    const handleNavigateToAddNewExpanse = () => {
+        Router.push('/dashboard/add')
+    }
     return <TemplateContainer>
         <header className="w-full max-w-screen-lg flex justify-between items-center h-1/6 ">
             <span className="font-bold text-2xl">Go Finances</span>
 
         <nav className="flex gap-4">
-            <Button>Adicionar Nova Conta</Button>
+            <Button onClick={handleNavigateToAddNewExpanse}>Adicionar Nova Conta</Button>
             <Button variant="ghost">Sair</Button>
         </nav>
         </header>
