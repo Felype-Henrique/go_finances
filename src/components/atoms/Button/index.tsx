@@ -11,7 +11,6 @@ export const Button = ({children, variant, ...props}: Props) => {
     return (
       <GhostButton
       {...props}
-      className=""
     >
       {children}
     </GhostButton>
@@ -21,7 +20,6 @@ export const Button = ({children, variant, ...props}: Props) => {
   return (
     <MainButton
       {...props}
-      className=""
     >
       {children}
     </MainButton>
